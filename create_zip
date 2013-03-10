@@ -2,10 +2,11 @@
 # Clear the Terminal log screen.
 clear
 # Set build version
-VERSION="_18-02-2013"
+VERSION="_10-03-2013"
 # Remove old modules and old zImage.
 # rm kernel-pack/system/lib/modules/*.ko
 rm kernel-pack/system/lib/modules/bcmdhd.ko
+rm kernel-pack/system/lib/modules/cpaccess.ko
 rm kernel-pack/system/lib/modules/kineto_gan.ko
 rm kernel-pack/system/lib/modules/scsi_wait_scan.ko
 rm kernel-pack/system/lib/modules/dma_test.ko
@@ -20,6 +21,7 @@ rm kernel-pack/kernel/zImage
 #
 cp arch/arm/boot/zImage kernel-pack/kernel
 cp drivers/net/wireless/bcmdhd/bcmdhd.ko kernel-pack/system/lib/modules
+cp arch/arm/common/cpaccess.ko cpaccess.ko kernel-pack/system/lib/modules
 cp drivers/net/kineto_gan.ko kernel-pack/system/lib/modules
 cp drivers/scsi/scsi_wait_scan.ko kernel-pack/system/lib/modules
 cp arch/arm/mach-msm/dma_test.ko kernel-pack/system/lib/modules
@@ -27,6 +29,6 @@ cp arch/arm/mach-msm/reset_modem.ko kernel-pack/system/lib/modules
 #
 # Creat a zip package.
 cd kernel-pack
-zip -r vision-kernel-$VERSION.zip *
+zip -r Kernel_3.0.68_$VERSION.zip *
 # Drop it to release folder
-mv vision-kernel-$VERSION.zip ~/android/
+mv Kernel_3.0.68_$VERSION.zip ~/android/
