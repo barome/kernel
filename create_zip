@@ -2,7 +2,7 @@
 # Clear the Terminal log screen.
 clear
 # Set build version
-VERSION="_15-03-2013"
+VERSION="_24-03-2013"
 # Remove old modules and old zImage.
 # rm kernel-pack/system/lib/modules/*.ko
 rm kernel-pack/system/lib/modules/bcmdhd.ko
@@ -29,6 +29,6 @@ cp arch/arm/mach-msm/reset_modem.ko kernel-pack/system/lib/modules
 #
 # Creat a zip package.
 cd kernel-pack
-zip -r Kernel_3.0.69_$VERSION.zip *
+zip -r Kernel_3.0.70_$VERSION.zip *
 # Drop it to release folder
-mv Kernel_3.0.69_$VERSION.zip ~/android/
+mv Kernel_3.0.70_$VERSION.zip ~/android/
