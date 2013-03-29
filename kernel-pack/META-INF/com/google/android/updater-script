@@ -16,7 +16,7 @@ ui_print("           SLQB, SLAB Allocator          ");
 ui_print("                                         ");
 ui_print("          OC/UV, VPN, Ext4, 2WCR         ");
 ui_print("                                         ");
-ui_print("    Kernel v3.0.70_24.03.2013 OC2,0GHz   ");
+ui_print("    Kernel v3.0.71_29.03.2013 OC2,0GHz   ");
 ui_print("                                         ");
 ui_print(" --++===============================++-- ");
 ui_print("                                         ");
