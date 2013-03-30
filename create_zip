@@ -2,7 +2,7 @@
 # Clear the Terminal log screen.
 clear
 # Set build version
-VERSION="_29-03-2013"
+VERSION="_30-03-2013"
 # Remove old modules and old zImage.
 # rm kernel-pack/system/lib/modules/*.ko
 rm kernel-pack/system/lib/modules/bcmdhd.ko
